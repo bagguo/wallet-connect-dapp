@@ -59,7 +59,8 @@ class ExampleApplication : MultiDexApplication() {
                     MoshiPayloadAdapter(moshi),
                     storage,
                     OkHttpTransport.Builder(client, moshi),
-                    Session.PeerMeta(url="https://stage.vixo.tv",name = "Example App",description = "demp app",icons = arrayListOf())
+//                    Session.PeerMeta(url="https://stage.vixo.tv",name = "Example App",description = "demp app",icons = arrayListOf())
+                    Session.PeerMeta(name = "Example App")
             )
             session.offer()
         }
